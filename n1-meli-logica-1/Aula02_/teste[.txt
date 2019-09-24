@@ -1,0 +1,211 @@
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ code .
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ git add .
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ git commit -m 'respostas'
+[master bd174b3] respostas
+ 9 files changed, 158 insertions(+)
+ create mode 100644 Aula01/exercicio1.html
+ create mode 100644 Aula01/exercicio1.js
+ create mode 100644 Aula01/exercicio2.html
+ create mode 100644 Aula01/exercicio2.js
+ create mode 100644 Aula01/exercicio3.html
+ create mode 100644 Aula01/exercicio3.js
+ create mode 100644 Aula01/exercicio4.html
+ create mode 100644 Aula01/exercicio4.js
+ create mode 100644 Aula01/exercicio5.js
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ git push origin
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.92 KiB | 392.00 KiB/s, done.
+Total 12 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/iprih/n1-meli-logica-1.git
+   50f5e14..bd174b3  master -> master
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ git origin -v
+git: 'origin' is not a git command. See 'git --help'.
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ git remote -v
+origin  https://github.com/iprih/n1-meli-logica-1.git (fetch)
+origin  https://github.com/iprih/n1-meli-logica-1.git (push)
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ git checkout -b priscila
+Switched to a new branch 'priscila'
+M       Aula01/README.md
+D       README.md
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (priscila)
+$ ls
+Aula01/  Aula02/  Random/  switch/
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (priscila)
+$ git remote add upstream
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (priscila)
+$ git remote add upstream https://github.com/reprograma/n1-meli-logica-1.git
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (priscila)
+$ git remote -v
+origin  https://github.com/iprih/n1-meli-logica-1.git (fetch)
+origin  https://github.com/iprih/n1-meli-logica-1.git (push)
+upstream        https://github.com/reprograma/n1-meli-logica-1.git (fetch)
+upstream        https://github.com/reprograma/n1-meli-logica-1.git (push)
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (priscila)
+$ git fetch upstram master
+fatal: 'upstram' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (priscila)
+$ git fetch upstream master
+remote: Enumerating objects: 81, done.
+remote: Counting objects: 100% (81/81), done.
+remote: Compressing objects: 100% (57/57), done.
+remote: Total 78 (delta 13), reused 77 (delta 12), pack-reused 0
+Unpacking objects: 100% (78/78), done.
+From https://github.com/reprograma/n1-meli-logica-1
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> upstream/master
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (priscila)
+$ git pull upstream master
+From https://github.com/reprograma/n1-meli-logica-1
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ Aula01/exercicio_01/exercicio_01.js  | 11 +++++++
+ Aula01/exercicio_01/exercicio_01.txt | 10 ++++++
+ Aula01/exercicio_02/exercicio_02.js  | 11 +++++++
+ Aula01/exercicio_02/exercicio_02.txt | 13 ++++++++
+ Aula01/exercicio_03/exercicio_03.js  | 15 +++++++++
+ Aula01/exercicio_03/exercicio_03.txt | 16 ++++++++++
+ Aula01/exercicio_04/exercicio_04.js  |  9 ++++++
+ Aula01/exercicio_04/exercicio_04.txt | 12 +++++++
+ Aula01/exercicio_05/exercicio_05.js  |  9 ++++++
+ Aula01/exercicio_05/exercicio_05.txt | 10 ++++++
+ Aula02/README.md                     | 19 +++++++++++
+ Aula02/exercicio_01/exercicio_01.js  | 30 +++++++++++++++++
+ Aula02/exercicio_01/exercicio_01.txt | 22 +++++++++++++
+ README.md                            | 62 ++++++++++++++++++++++++++++++++++++
+ swith.js                             | 20 ++++++++++++
+ 15 files changed, 269 insertions(+)
+ create mode 100644 Aula01/exercicio_01/exercicio_01.js
+ create mode 100644 Aula01/exercicio_01/exercicio_01.txt
+ create mode 100644 Aula01/exercicio_02/exercicio_02.js
+ create mode 100644 Aula01/exercicio_02/exercicio_02.txt
+ create mode 100644 Aula01/exercicio_03/exercicio_03.js
+ create mode 100644 Aula01/exercicio_03/exercicio_03.txt
+ create mode 100644 Aula01/exercicio_04/exercicio_04.js
+ create mode 100644 Aula01/exercicio_04/exercicio_04.txt
+ create mode 100644 Aula01/exercicio_05/exercicio_05.js
+ create mode 100644 Aula01/exercicio_05/exercicio_05.txt
+ create mode 100644 Aula02/README.md
+ create mode 100644 Aula02/exercicio_01/exercicio_01.js
+ create mode 100644 Aula02/exercicio_01/exercicio_01.txt
+ create mode 100644 swith.js
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (priscila)
+$ ls
+Aula01/  Aula02/  Aula02_/  Random/  README.md  switch/  swith.js
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (priscila)
+$ git checkout master
+Switched to branch 'master'
+M       Aula01/README.md
+Your branch is up to date with 'origin/master'.
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ ls
+Aula01/  Aula02_/  Random/  README.md  switch/
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ cd Aula02_/
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1/Aula02_ (master)
+$ ls
+exercicio01.html  exercicio01.js  exercicio02.html  exercicio02.js
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1/Aula02_ (master)
+$ git pull upstream master
+From https://github.com/reprograma/n1-meli-logica-1
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ Aula01/exercicio_01/exercicio_01.js  | 11 +++++++
+ Aula01/exercicio_01/exercicio_01.txt | 10 ++++++
+ Aula01/exercicio_02/exercicio_02.js  | 11 +++++++
+ Aula01/exercicio_02/exercicio_02.txt | 13 ++++++++
+ Aula01/exercicio_03/exercicio_03.js  | 15 +++++++++
+ Aula01/exercicio_03/exercicio_03.txt | 16 ++++++++++
+ Aula01/exercicio_04/exercicio_04.js  |  9 ++++++
+ Aula01/exercicio_04/exercicio_04.txt | 12 +++++++
+ Aula01/exercicio_05/exercicio_05.js  |  9 ++++++
+ Aula01/exercicio_05/exercicio_05.txt | 10 ++++++
+ Aula02/README.md                     | 19 +++++++++++
+ Aula02/exercicio_01/exercicio_01.js  | 30 +++++++++++++++++
+ Aula02/exercicio_01/exercicio_01.txt | 22 +++++++++++++
+ README.md                            | 62 ++++++++++++++++++++++++++++++++++++
+ swith.js                             | 20 ++++++++++++
+ 15 files changed, 269 insertions(+)
+ create mode 100644 Aula01/exercicio_01/exercicio_01.js
+ create mode 100644 Aula01/exercicio_01/exercicio_01.txt
+ create mode 100644 Aula01/exercicio_02/exercicio_02.js
+ create mode 100644 Aula01/exercicio_02/exercicio_02.txt
+ create mode 100644 Aula01/exercicio_03/exercicio_03.js
+ create mode 100644 Aula01/exercicio_03/exercicio_03.txt
+ create mode 100644 Aula01/exercicio_04/exercicio_04.js
+ create mode 100644 Aula01/exercicio_04/exercicio_04.txt
+ create mode 100644 Aula01/exercicio_05/exercicio_05.js
+ create mode 100644 Aula01/exercicio_05/exercicio_05.txt
+ create mode 100644 Aula02/README.md
+ create mode 100644 Aula02/exercicio_01/exercicio_01.js
+ create mode 100644 Aula02/exercicio_01/exercicio_01.txt
+ create mode 100644 swith.js
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1/Aula02_ (master)
+$ ls
+exercicio01.html  exercicio01.js  exercicio02.html  exercicio02.js
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1/Aula02_ (master)
+$ cd ..
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ ls
+Aula01/  Aula02/  Aula02_/  Random/  README.md  switch/  swith.js
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$ ^C
+
+reprograma@BR00000067S6CD2 MINGW64 ~/Desktop/n1-meli-logica-1 (master)
+$
