@@ -6,10 +6,10 @@ var congelado = Boolean;
 
 
 var produtos = [
-    {nome: "nescau", tempoDeValidade: 200, congelado: false},
-    {nome: "sorvete", tempoDeValidade: 100, congelado: true},
-    {nome: "bolacha", tempoDeValidade: 300, congelado: false},
-    {nome: "leite", tempoDeValidade: 50, congelado: false}
+    {nome: "nescau", tempoDeValidade: 90, congelado: false},
+    {nome: "sorvete", tempoDeValidade: 60, congelado: true},
+    {nome: "bolacha", tempoDeValidade: 30, congelado: false},
+    {nome: "leite", tempoDeValidade: 70, congelado: false}
 ]
 
 var posicao = parseInt(r.question("Digite a posicao do produto entre 0  e 3: ")); //vai pedir ao usuario o produto
@@ -21,10 +21,18 @@ var porcentagem = (diasParaVencimento*100)/produtoSelecionado.tempoDeValidade;
 
 console.log(`A porcentagem é ${porcentagem}`);
 
-if (porcentagem <=2){
-
+if (porcentagem <= 2){
+console.log("O produto deve ser descartado, está muito proximo ao vencimento")
 }
-
+else if(porcentagem <= 10 && !produtoSelecionado.congelado){
+console.log("Desconto! Produto não congelado e próximo da validade.")
+}
+else if (porcentagem <= 5 && produtoSelecionado.congelado){
+console.log("Desconto! Produto congelado e próximo da validade.")
+}
+else{
+    console.log("Produto longe do vencimento")
+}
 
 //console.log(typeof porcentagem);
 //console.log(typeof tempoDeValidade);
