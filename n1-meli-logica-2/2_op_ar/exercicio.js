@@ -19,21 +19,18 @@ Dica: você pode usar a função .toFixed(digits) para limitar o numero de casas
 
 var r = require("readline-sync");
 
-var nome = r.question("Digite o nome do produto: ");
-var valor = parseInt(r.question("Digite o valor do produto: "));
+var produtos = [//lista de produto [array]
+    {nome: "maca", preco: 10},//objeto
+    {nome: "pera", preco: 8.00},//objeto
+    {nome: "melancia", preco: 50.00},//objeto
+    {nome: "uva", preco: 2.00}//objeto
+];
+    
+var posicao = parseInt(r.question("Digite a posicao do produto entre 0  e 3: ")); //vai pedir ao usuario o produto
+var porcentagem = parseInt(r.question("Digite a porcentagem: ")); // escolher desconto
 
-var lista = [
-    {nome: "priscila", produto: "uva"}
-]
-produto = {
-    nome,
-    valor,
-    lista
-}
+var produtoSelecionado = produtos[posicao];//procuto que o usuario escolheu - procura dentro do array qual eh a posição
 
-console.log(nome);
-console.log(valor);
-console.log(lista);
-
-//var nome = [nome];
-//console.log(nome);
+var desconto = produtoSelecionado.preco * (porcentagem / 100); // calcula o valor do desconto
+console.log(`Produto selecionado é ${produtoSelecionado.nome} o valor dele é com desconto é R$ ` + desconto.toFixed(2)); // o to fixed printa apenas duas casas decimais
+    
