@@ -13,4 +13,10 @@ do{
 let meta = 500;
 let passos = parseInt(r.question("Digite a quantidade de passos "));
 if(passos < 500)
-}
+}while
+
+
+/*codigo prof
+
+
+*/
