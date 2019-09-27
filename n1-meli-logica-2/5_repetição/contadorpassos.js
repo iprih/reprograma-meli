@@ -18,5 +18,11 @@ if(passos < 500)
 
 /*codigo prof
 
+let passos = 0;
+const meta = 500;
+while(passos < meta){
+    passos += parseInt(r.questiona("Informe a quantidade de passos: "))
+}
+console.log("parabens voce atingiu a meta" + passos)
 
 */
