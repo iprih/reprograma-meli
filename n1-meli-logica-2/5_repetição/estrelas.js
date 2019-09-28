@@ -19,15 +19,3 @@ function estrelas() { //criei a funcao
     }
 }
 estrelas();
-
-/*codigo da prof
-
-let numeroDigitado = parseInt(r.questiona("informe a qtd de estrelas"))
-let estrelas = "";
-for (let i = 0; i<= numeroDigitado; i++){
-    estrela += "*"
-    console.log(estrelas)
-}
-
-
-*/

@@ -12,7 +12,9 @@ O usuário informa um número, e o programa gera uma pirâmide de estrelas no se
 
 const r = require("readline-sync");
 
-let estrela = parseInt(r.question("Digite a quantidade de estrelas"));
+let estrela = parseInt(r.question("Digite a quantidade de estrelas: "));
 let stars = "";
 for(let i = 0; i < estrela; i++ ){
+    stars += "*"
+    console.log(stars)
     }
