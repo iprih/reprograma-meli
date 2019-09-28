@@ -5,26 +5,20 @@
     - Printe o menor.*/
 
 const lista = [5, 37, 18, 58, 12, -5];
+const maior = 0;
+const menos = 0;
 
 
 
-for (let max = 0; max < lista.length; max++){
-    let min = lista.[max];
-    console.log(`o array ${lista}`);
-    console.log(`a lista ${max}`);
+for (let i = 0; i < arry.length; i++){
+    if(array[i] > maior){
+        maior = array[i];
+        //console.log()
+    }
+    if (array[i] < menor){
+        menor = array[i];
+    }
+
+    console.log(`Maior ${maior}, ${menor}`);
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-//console.log(max);
-
