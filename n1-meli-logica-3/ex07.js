@@ -9,3 +9,13 @@ for (let i=1; i<21; i++){
     }
 }
 console.log(arra) 
+//
+const arra = [];
+let count = 0;
+for (let i=1; i<10; i++){
+    if (i %2===1){
+        arra.push(i)
+        count++
+    }
+}
+console.log(arra) 
