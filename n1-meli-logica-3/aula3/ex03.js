@@ -9,6 +9,6 @@ pokemon.nome = 'Charizard'
 pokemon.nomejapones = 'Lizardon'
 pokemon.tipo = 'fogo-e-voador'
 pokemon.evolucaode = 'charmander'
-pokemon.sabe_voar = 
+pokemon.sabe_voar = true
 
 console.log(pokemon.hasOwnProperty('sabe_voar'))
