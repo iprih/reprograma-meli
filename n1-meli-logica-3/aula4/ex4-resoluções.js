@@ -1,5 +1,6 @@
 // 1- Crie uma função construtora para Terreno, cada terreno deve ter:
 // largura, comprimento, area(largura x comprimento)
+//area vai ser a multiolicação
 
 // 2 crie métodos usando o prototype, eles devem ser:
 // - calcularPreco -> que vai ser a area x 1000 reais.
@@ -13,7 +14,7 @@
 
 // 7 - Imprima na tela o último terreno da array terrenos.
 // 8 - Imprima a area do terceiro item da array terrenos
-// 9 - Usando um loop, execute o método mostrarInfos de todos os terrenos.
+// 9 - (for in/map) Usando um loop, execute o método mostrarInfos de todos os terrenos.
 
 // 10 - Crie uma função que vai receber a array de objetos e vai ordenar a lista do mais barato para o mais caro.
 // 11 - Crie uma função que Imprima o mais barato
