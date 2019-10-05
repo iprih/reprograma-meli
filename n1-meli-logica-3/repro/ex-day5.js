@@ -1,4 +1,5 @@
-// 1 Precisamos de uma lista de objetos com informações das alunas, sendo essas : nome, data de nascimento, se nasceu em sp, e id.
+// 1 Precisamos de uma lista de objetos com informações das alunas, sendo essas :
+// nome, data de nascimento, se nasceu em sp, e id.
 //    os dados citados acima estão sendo recebidos no eventListener do botaoEnviar,
 //    exceto pelo id (este deve ser gerado por vc, começando em 1 e sempre acrescentando +1)
 //    precisamos de ao menos 4 alunas nessa lista
@@ -6,6 +7,19 @@
 // 2 Depois crie uma função para listar alunas, que irá mostrar (pode ser apenas no console) a lista de alunas.
 //   crie uma função  que lista apenas alunas que moram em SP.
 //   complete a função calcularIdade e calcule a idade das alunas
+
+const alunas = []
+function criarAluna(nome,data,sp){
+  let id = 0;
+  alunas.push(new Aluna(nome, dataDeNasc, SP, ++id))
+}
+
+function Aluna(nome,data,sp){ // funcao construtora que recebe coisas da 
+  this.nome = nome
+  this.dataDeNasc = dataDeNasc
+  this.Sp = Sp
+  }
+
 
 const botaoEnviar = document.getElementById("cadastrarAluna")
 const nome = document.getElementById("name")
@@ -27,7 +41,7 @@ function nasceuEmSP() {
 botaoEnviar.addEventListener("click", function(e) {
   e.preventDefault()
   //estamos recevendo aqui os dados
-  console.log(nome.value, dataDeNasc.value, nasceuEmSP())
+  criarAluna(nome.value, dataDeNasc.value, nasceuEmSP())
 })
 
 //  btnMostrar.addEventListener("click", funcao para mostrar alunas)
