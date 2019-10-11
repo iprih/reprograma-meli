@@ -8,5 +8,8 @@ exports.get = (req, res) => {
 exports.getById = (req, res) => {
     const id = req.params.id
     console.log(id)    
-    res.status(200).send(alunas.find(aluna => aluna.id == id))
+    res.status(200).send(alunas.find(aluna => aluna.id))
 }
+
+
+//res.status(200).send(alunas.find(aluna => aluna.id == id
